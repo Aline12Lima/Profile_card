@@ -1,0 +1,16 @@
+@use 'variables';
+@use 'mixins';
+@use 'card';
+
+body{
+    margin: 0;
+    font-family: variables.$main-font;
+    background-color: variables.$light-grey;
+
+    min-height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+

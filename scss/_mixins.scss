@@ -1,0 +1,16 @@
+@mixin theme-button($bg-color, $text-color){
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: $bg-color;
+    color: $text-color;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+
+    &:hover{
+        transform: scale(1.05);
+    }
+}
+
+

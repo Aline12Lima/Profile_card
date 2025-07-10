@@ -1,0 +1,37 @@
+.card {
+  background-color: $white;
+  width: 300px;
+  border-radius: $card-border-radius;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+
+  @media(max-width: 600pc){
+    width: 90%;
+}
+
+
+  &__image {
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+  &__content {
+    padding: $card-padding;
+  }
+  &__name {
+    margin: 0;
+    font-size: 1.5rem;
+    color: $dark-grey;
+  }
+  &__title {
+    color: #777;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+  &__button {
+    @include theme-button($primary-color, $white);
+  }
+}
+
